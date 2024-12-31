@@ -1,12 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="d7ced7a25237a496914e.css">
-<script defer src="main.js"></script></head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="d7ced7a25237a496914e.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div id="city-display"></div>
+    <div id="temp">
+      <div id="curr-temp"></div>
+      <div id="change-temp">
+        <img
+          id="change-temp-img"
+          src="c1de846c19bba225a161.png"
+          width="100vw"
+          height="auto"
+        />
+      </div>
+    </div>
+
+    <div id="weather-icon"></div>
+
+    <div class="search">
+      <label for="fname"></label>
+      <input type="text" id="fname" name="fname" placeholder="Edinburgh" />
+      <button type="button" id="search-button">Search</button>
+    </div>
+  </body>
 </html>
