@@ -1,0 +1,83 @@
+:root{
+    --background-color:#1e1e1e;
+    --search-button: #3e3e42;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: "Roboto", serif;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+button{
+    background-color: var(--search-button);
+    margin-left: 1%;
+    color: white;
+}
+
+button, input[type = text]{
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+input[type = text]{
+    height: 3vh;
+    width: 30vw;
+    font-size: 100%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+#city-display, #curr-temp{
+    padding-top: 5%;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}
+
+#city-display{
+    font-size: 400%;
+}
+
+#curr-temp{
+    font-size: 300%;
+}
+
+#temp-toggle{
+    background-color: red;
+}
+
+#temp{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    gap: 20%
+}
+
+#change-temp-img{
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+img{
+    filter: invert(100%) sepia(5%) saturate(57%) hue-rotate(3deg) brightness(115%) contrast(100%);
+}
+
+#change-temp-img:hover{
+    cursor: pointer;
+}
+
+#weather-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
