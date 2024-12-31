@@ -27,6 +27,7 @@ const currTemp = document.getElementById(`curr-temp`);
 const changeTempHeader = document.getElementById(`change-temp`);
 const changeTemp = document.getElementById(`change-temp-img`);
 const weatherIcon = document.getElementById(`weather-icon`);
+const weatherConditions = document.getElementById(`weather-conditions`);
 let celsiusBool = true;
 
 function changeIcon(condition) {
@@ -103,6 +104,7 @@ async function defaultWeather() {
   const processedData = await processWeather("edinburgh");
   cityLocation.innerHTML = processedData[0].location;
   currTemp.innerHTML = processedData[0].temp + `&#176;C`;
+  weatherConditions.innerHTML = processedData[0].conditions;
   changeIcon(processedData[0].icon);
 }
 
@@ -117,10 +119,12 @@ searchBtn.addEventListener("click", async () => {
       let currentWeather = weatherResults[0].temp;
       currTemp.innerHTML = currentWeather + `&#176;C`;
       changeTempHeader.appendChild(changeTemp);
+      weatherConditions.innerHTML = weatherResults[0].conditions;
       changeIcon(weatherResults[0].icon);
     } else {
       cityLocation.innerHTML = `Trouble retrieving ${searchBar.value}'s value!`;
       currTemp.innerHTML = "";
+      weatherConditions.innerHTML = "";
       changeTempHeader.innerHTML = "";
     }
   } else {

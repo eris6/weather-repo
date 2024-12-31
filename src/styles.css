@@ -38,7 +38,8 @@ button:hover {
 }
 
 #city-display,
-#curr-temp {
+#curr-temp,
+#weather-conditions {
   padding-top: 5%;
   text-align: center;
   color: white;
@@ -52,6 +53,14 @@ button:hover {
 #curr-temp {
   font-size: 300%;
 }
+
+#weather-conditions{
+  font-size: 200%;
+}
+
+
+
+
 
 #temp-toggle {
   background-color: red;
